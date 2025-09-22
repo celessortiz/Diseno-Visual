@@ -1,42 +1,56 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #4E0000;
-  text-align: center;
-  padding: 20px;
+  background: #f9f9f9;
+  margin: 20px;
+  color: #333;
 }
 
 h1 {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .malla {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .materia {
-  background-color: #fff;
-  border: 2px solid #4E0000;
+  background: #fff;
+  border: 2px solid #ccc;
   border-radius: 8px;
   padding: 12px;
-  width: 200px;
+  text-align: center;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.materia.locked {
-  background-color: #ccc;
-  color: #666;
-  border-color: #999;
-  cursor: not-allowed;
+.materia:hover {
+  border-color: #007BFF;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: scale(1.05);
 }
 
-.materia.unlocked {
-  background-color: #fff;
-  color: #4E0000;
+.materia.aprobada {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.materia.bloqueada {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
 }
 
 .materia.aprobada {
