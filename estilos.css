@@ -1,6 +1,7 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
   margin: 20px;
   color: #333;
 }
@@ -8,15 +9,17 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  color: #2c3e50;
 }
 
 h2 {
   margin-top: 40px;
-  color: #444;
-  border-bottom: 2px solid #ddd;
+  color: #34495e;
+  border-bottom: 2px solid #bdc3c7;
   padding-bottom: 5px;
 }
 
+/* Contenedor */
 .malla {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -24,10 +27,11 @@ h2 {
   margin-top: 20px;
 }
 
+/* Materias */
 .materia {
-  background: #fff;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  background: #ffffff;
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
   padding: 12px;
   text-align: center;
   font-size: 14px;
@@ -36,24 +40,20 @@ h2 {
 }
 
 .materia:hover {
-  border-color: #007BFF;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transform: scale(1.05);
+  border-color: #3498db;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
 }
 
+/* Estados */
 .materia.aprobada {
-  background: #d4edda;
-  border-color: #28a745;
-  color: #155724;
+  background: #d4f8e8;
+  border-color: #27ae60;
+  color: #145a32;
 }
 
 .materia.bloqueada {
-  background: #f8d7da;
-  border-color: #dc3545;
-  color: #721c24;
-}
-
-.materia.aprobada {
-  background-color: #4E0000;
-  color: #fff;
+  background: #fdecea;
+  border-color: #e74c3c;
+  color: #922b21;
 }
